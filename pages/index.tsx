@@ -16,14 +16,13 @@ const Home: NextPage = () => {
   const setBlockItems = useSetRecoilState(blocksState);
 
   useEffect(() => {
-    console.log('index use effect running');
     let col = 0;
     let row = 0;
     const blocks: BlockItem[] = [];
     let index = 0;
-    [...Array(1250)].forEach(b => {
-      col = index % 50;
-      row = Math.floor(index / 50);
+    [...Array(1875)].forEach(b => {
+      col = index % 75;
+      row = Math.floor(index / 75);
       let bi = new BlockItem();
       bi.id = index;
       bi.key = `${index}-false}`;
@@ -38,7 +37,7 @@ const Home: NextPage = () => {
   return (
     <div className="h-full">
       <Head>
-        <title>Algorithms</title>
+        <title>Pathfinding Visualizer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

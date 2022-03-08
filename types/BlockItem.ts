@@ -7,4 +7,7 @@ export class BlockItem {
 
     // Dijstra
     public tentativeDistance: number = 0;
+
+    // All
+    public searchOrder?: number;
 }

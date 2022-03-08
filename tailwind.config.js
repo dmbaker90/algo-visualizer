@@ -6,19 +6,14 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        // Simple 16 column grid
-        '50': 'repeat(50, minmax(10px, 1fr))',
-
-        // Complex site-specific column configuration
-        // 'footer': '200px minmax(900px, 1fr) 100px',
+        '75': 'repeat(75, 20px)',
       },
-
       gridTemplateRows: {
-        // Simple 8 row grid
-        '25': 'repeat(25, 1fr)',
-
-        // Complex site-specific row configuration
-        // 'layout': '200px minmax(900px, 1fr) 100px',
+        '25': 'repeat(25, 20px)',
+      },
+      animation: {
+      },
+      keyframes: {
       }
     },
   },
